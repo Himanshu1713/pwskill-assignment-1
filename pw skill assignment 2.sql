@@ -20,7 +20,7 @@ select upper(first_name),upper(last_name)  from customer;
 #Question 4: 
 #Extract the month from the rental date and display it alongside the rental ID. 
 
-select rental_id , month(rental_date) from rental;
+select rental_id , monthname(rental_date) from rental;
 
 #Retrieve the count of rentals for each customer (display customer ID and the count of rentals). 
 
