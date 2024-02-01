@@ -39,7 +39,8 @@ select *from rental where customer_id = 1 ;
 select *from film where rental_duration > 5 ;
 
 --- 8. List the total number of films whose replacement cost is greater than $15 and less than $20
-select *from film where replacement_cost >15 and replacement_cost <20;
+select film_id,title,replacement_cost from film where replacement_cost between 15 and 20 ;
+
 
 --- 9. Display the count of unique first names of actors.  ---
 select count(distinct first_name) as first_name from actor;
